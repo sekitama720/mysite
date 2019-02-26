@@ -1,0 +1,140 @@
+/* タブレット向けレイアウト */
+@media all and (max-width: 989px) {
+
+  .guide,.showcase,.category {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+
+  .heading h2 {
+    font-size: 20px;
+  }
+
+  /* プロフィールページ */
+  /* お問合わせページ */
+  .profile-left,.contact-left{
+    margin:0 auto;
+    float:none;
+  }
+
+  .profile-right,.contact-right{
+    float:none;
+    margin: 50px auto;
+  }
+
+  .navbar-nav{
+    background-color: black;
+  }
+
+
+
+}
+
+/* スマホ向けレイアウト */
+@media all and (max-width: 670px) {
+  .guide,.showcase,.category{
+    width: 100%;
+  }
+  .category{
+    margin-bottom: 0;
+  }
+
+  .btn-message {
+    width: 100%;
+  }
+
+  .top-wrapper {
+    text-align: left;
+  }
+
+  /* header-rightクラスのdisplayをnoneに指定してください */
+  .header-right{
+    display:none;
+  }
+
+  /* menu-iconクラスのdisplayをblockに指定してください  */
+  .menu-icon{
+    display:block;
+  }
+
+  .top-wrapper h1 {
+    font-size: 24px;
+  }
+
+  .top-wrapper p {
+    font-size: 14px;
+  }
+  .message-wrapper {
+    padding-bottom: 80px;
+    padding-top: 30px;
+  }
+
+  .message-container{
+    width: 400px;
+    opacity: 0.8;
+  }
+  /* プロフィールページ */
+  .profile-left{
+    margin:0 auto;
+    float:none;
+    width: 100%
+  }
+
+  .profile-right{
+    float:none;
+    margin: 50px auto;
+    width: 100%;
+  }
+  table {
+  font-size: 13px;
+  }
+
+  .profile-right table tr{
+    display: inline-block;
+    width: 350px;
+  }
+
+  .profile-right table tr th{
+    width: 100px;
+  }
+
+  .profile-right table tr td{
+    width: 244px;
+  }
+  .twitter_btn2{
+    float: none;
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+  }
+  .insta_btn2{
+    float: none;
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+  }
+
+  /* お問合わせページ */
+  .contact-left{
+    margin:0 auto;
+    float:none;
+    width: 100%
+  }
+
+  .contact-right{
+    float:none;
+    margin: 50px auto;
+    width: 100%;
+  }
+  .contact-btn{
+    width: 100%
+  }
+}
