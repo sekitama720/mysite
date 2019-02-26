@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="">
+    <title>Movierium|CONTACT PAGE</title>
+    <link rel="stylesheet" href="../common/css/stylesheet.css">
+    <link rel="stylesheet" href="../common/css/responsive.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <!-- ナビここから -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <p class="navbar-brand"><span class="fas fa-film"></span> Movierium</p>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">TOP <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../profile/index.html">PROFILE</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              CATEGORY
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../showcase/jp_film/index.html">邦画</a>
+              <a class="dropdown-item" href="../showcase/western_film/index.html">洋画</a>
+              <a class="dropdown-item" href="../showcase/anime_film/index.html">アニメ</a>
+              <a class="dropdown-item" href="../showcase/korea_film/index.html">韓流</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ナブここまで -->
+
+    <!-- お問合わせここから -->
+    <div class="contact-wrapper">
+      <div class="container">
+        <div class="contact_title">
+          <h1>CONTACT</h1>
+        </div>
+        <div class="contact-left">
+          <h1>オススメ映画を教えて下さい！</h1>
+          <h2>※以下を入力して送信ボタンを押してください</h2>
+          <p>・映画タイトルを入力してください</p>
+          <input class="to-put" type="text">
+          <form  action="cgi-bin/formmail.cgi" method="post">
+            <p>・ジャンルを選択してください<br>
+              <select class="to-put" name="horoscope">
+                <option >選択してください</option>
+                <option >洋画</option>
+                <option >邦画</option>
+                <option >アニメ</option>
+                <option >韓流</option>
+              </select></p>
+            </form>
+          <p>・オススメポイント（名ゼリフ、感動シーンなど...）</p>
+          <textarea class="to-put" name="name" rows="4" cols="40"></textarea>
+          <div>
+          <div class="contact-btn to-btn" onClick="disp()" >送信</div>
+        </div>
+        </div>
+        <div class="contact-right">
+          <h1>管理人に問合わせ</h1>
+          <h2>※以下よりメールでご連絡下さい</h2>
+          <span class="contact-btn" onClick="disp()">お問合わせ</span>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!-- お問合わせここまで -->
+
+    <!-- 空 -->
+    <div class="message-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2></h2>
+        </div>
+
+      </div>
+    </div>
+    <!-- 空 -->
+
+    <script type="text/javascript">
+      function disp(){
+      	// 「OK」時の処理開始 ＋ 確認ダイアログの表示
+      	if(window.confirm('大変申し訳ありません。こちらは只今未対応となっております。お問合わせはツイッターのDMにて承ります。OKでツイッターページへ')){
+      		location.href = "https://twitter.com/sekitama7"; // example_confirm.html へジャンプ
+      	}
+      	// 「OK」時の処理終了
+      	// 「キャンセル」時の処理開始
+      	else{
+      		window.alert('申し訳ありませんでした'); // 警告ダイアログを表示
+      	}
+      	// 「キャンセル」時の処理終了
+      }
+    </script>
+
+    <!-- フッターここから -->
+    <footer>
+      <div class="container">
+        <p class="logo"><span class="fas fa-film"></span> Movierium</p>
+        <p class="cp">&copy;2019. Movierium</p>
+      </div>
+    </footer>
+    <!-- フッターここまで -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
