@@ -1,0 +1,634 @@
+  /* ------------------------基本構造 ------------------------*/
+* {
+  box-sizing: border-box;
+  font-family: "Sawarabi Mincho";
+}
+
+body{
+  margin: 0;
+  background-size:cover;
+  background-position: 0 150px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.menu-icon{
+  display: none;
+}
+
+.jp-nav:hover,.western-nav:hover,.anime-nav:hover,.korea-nav:hover{
+  text-decoration: none;
+}
+.btn-circle-fishy:hover{
+text-decoration: none;
+}
+/* ------------------------トップページ------------------------ */
+
+/* ヘッダー */
+.navbar {
+  height: 65px;
+  width: 100%;
+}
+
+.navbar-brand{
+  margin-left: 100px;
+  margin-top: 15px;
+}
+
+.navbar-toggler{
+  margin-bottom: 15px;
+}
+
+.nav-item{
+  margin-left: 10px;
+}
+
+.logo {
+  width: 100%;
+  margin-top: 20px;
+  color: rgba(255,255,255,0.8);
+  font-size: 20px;
+}
+
+.menu-icon {
+  display: none;
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+}
+
+/* トップラッパー */
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(../../images/top_01.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.top-wrapper h2 {
+  padding-top:30px;
+  font-size: 35px;
+  letter-spacing: 5px;
+}
+
+.top-wrapper p {
+  padding-top:10px;
+  opacity: 0.7
+}
+
+/* 案内 */
+.guide-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+    /* font-weight: normal; */
+    color:rgba(34, 49, 52, 1);
+    opacity: 0.7;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.guide {
+  float: left;
+  width: 25%;
+}
+
+.guide-icon  {
+  position: relative;
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #b3aeb5;
+}
+
+/* ボタン */
+.btn-circle-fishy {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500px;
+  letter-spacing:6px;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  transition: .4s;
+}
+
+.btn-circle-fishy div{
+  line-height: normal;
+  vertical-align: middle;
+  display:inline-block;
+  padding: 10px;
+}
+
+.btn-jp-film{
+  background-image: linear-gradient(45deg, #709dff 0%, #91fdb7 100%);
+}
+
+.btn-western-film{
+  background-image: linear-gradient(45deg, #FF00A1 0%, #F6FF00 100%);
+}
+
+.btn-anime-film{
+  background-image: linear-gradient(45deg, #E629FF 0%, #29FFC2 100%);
+}
+
+.btn-korea-film{
+  background-image: linear-gradient(45deg, #EC790E 0%, #CFFF57 100%);
+}
+
+.btn-circle-fishy:hover {
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+/* 映画募集*/
+.message-wrapper {
+  padding-bottom: 80px;
+  text-align: center;
+  background-image: url(../../images/top_02.jpg);
+  background-size: cover;
+  padding-top: 30px;
+  background-position: center;
+}
+
+.message-container{
+  background-color: #f7f7f7;
+  height: 400px;
+  width: 800px;
+  opacity: 0.8;
+}
+
+.heading h3 {
+  font-weight: normal;
+  color:rgba(34, 49, 52, 1);
+  opacity: 0.7;
+  font-size: 20px;
+}
+
+.btn-message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.btn-message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+.btn-message {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn-message:hover {
+  opacity: 1;
+}
+
+/* フッター */
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: white;
+  font-size: 12px;
+  opacity:0.7;
+  padding-left: 25px;
+  text-align: center;
+  padding-right: 25px;
+}
+
+footer {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  background-color: rgba(34, 49, 52, 0.9);
+}
+
+/* ------------------------プロフィールページ ------------------------*/
+
+/* プロフィールラッパー */
+.profile-wrapper{
+  background-color: #F2F2F2;
+  height: 100%;
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  display: inline-block;
+}
+
+.profile_title h1{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color:rgba(34, 49, 52, 1);
+}
+
+.profile-left{
+  margin-top: 50px;
+  width: 500px;
+  height: 376px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+  border-radius:10px;
+  border: 2px solid #fff;
+  float: left;
+  background-image: url("../../images/profile_01.jpg");
+  background-size: cover;
+  background-position: right;
+}
+
+.profile-right{
+  float: right;
+  margin-top: 50px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.8);
+  width:500px;
+  padding: 30px 10px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+  height: 376px;
+}
+
+.profile-right table caption{
+  display: block;
+  padding-top: 0;
+  color: rgba(34, 49, 52, 1);
+  font-size: 20px;
+  text-align: center;
+}
+
+table tr,th,td{
+color:rgba(34, 49, 52, 1);
+border: solid 1px #000000;
+border-collapse: separate;
+}
+
+.profile-right table tr{
+  display: inline-block;
+  width: 470px;
+}
+
+.profile-right table tr th{
+  width: 140px;
+}
+
+.profile-right table tr td{
+  width: 323px;
+  padding: 1px 3px;
+}
+
+/* ------------------------お問い合わせページ------------------------ */
+.contact-wrapper{
+  background-color: #F2F2F2;
+  padding-top: 70px;
+  color:rgba(34, 49, 52, 1);
+  height: 100%;
+  width: 100%;
+  padding-bottom: 100px;
+  display: inline-block;
+}
+.contact_title h1{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  height: 94px;
+  line-height: 94px;
+}
+.contact-left{
+  margin-top: 50px;
+  width: 500px;
+  float: left;
+  background-color: white;
+  padding:20px;
+}
+
+.contact-left p{
+  margin-bottom: 1px;
+  font-size: 13px;
+}
+
+.to-btn{
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+
+.contact-right{
+  margin-top: 50px;
+  width: 500px;
+  height: 200px;
+  float: right;
+  background-color: white;
+  padding: 20px;
+}
+
+.contact-right h1,.contact-left h1{
+  margin: 0;
+  font-size: 23px;
+}
+
+.contact-right h2,.contact-left h2{
+  margin-top:10px;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.contact-btn {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.contact-btn:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+.contact-btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.contact-btn:hover {
+  opacity: 1;
+}
+
+
+.show-button{
+  width: auto;
+}
+
+.to-put{
+  width: 270px;
+  margin-left: 5px;
+}
+
+
+/* ------------------------インスタロゴ------------------------ */
+.insta_btn2{/*ボタンの下地*/
+  color: #FFF;/*文字・アイコン色*/
+  border-radius: 7px;/*角丸に*/
+  position: relative;
+  display: inline-block;
+  height: 50px;/*高さ*/
+  width: 190px;/*幅*/
+  text-align: center;/*中身を中央寄せ*/
+  font-size: 25px;/*文字のサイズ*/
+  line-height: 50px;/*高さと合わせる*/
+  vertical-align: middle;/*垂直中央寄せ*/
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+  overflow: hidden;/*はみ出た部分を隠す*/
+  text-decoration:none;/*下線は消す*/
+  float: right;
+  margin-top: 30px;
+  margin-right: 40px;
+}
+
+.insta_btn2:before{/*グラデーション②*/
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;/*全体を覆う*/
+  height: 100%;/*全体を覆う*/
+  background: -webkit-linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+  background: linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+}
+
+.insta_btn2 .fa-instagram{/*アイコン*/
+  font-size: 35px;/*アイコンサイズ*/
+  position: relative;
+  top: 4px;/*アイコン位置の微調整*/
+}
+
+.insta_btn2 span {/*テキスト*/
+  display:inline-block;
+  position: relative;
+  transition: .5s
+}
+
+.insta_btn2:hover span{/*ホバーで一周回転*/
+  -webkit-transform: rotateX(360deg);
+  -ms-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+
+/* ------------------------ツイッターロゴ------------------------ */
+.twitter_btn2{/*ボタンの下地*/
+  color: #FFF;/*文字・アイコン色*/
+  border-radius: 7px;/*角丸に*/
+  position: relative;
+  display: inline-block;
+  height: 50px;/*高さ*/
+  width: 190px;/*幅*/
+  text-align: center;/*中身を中央寄せ*/
+  font-size: 25px;/*文字のサイズ*/
+  line-height: 50px;/*高さと合わせる*/
+  vertical-align: middle;/*垂直中央寄せ*/
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+  overflow: hidden;/*はみ出た部分を隠す*/
+  text-decoration:none;/*下線は消す*/
+  float: left;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.twitter_btn2:before{/*グラデーション②*/
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;/*全体を覆う*/
+  height: 100%;/*全体を覆う*/
+  background-color: #55acee;
+}
+
+.twitter_btn2 .fa-twitter{/*アイコン*/
+  font-size: 35px;/*アイコンサイズ*/
+  position: relative;
+  top: 4px;/*アイコン位置の微調整*/
+}
+
+.twitter_btn2 span {/*テキスト*/
+  display:inline-block;
+  position: relative;
+  transition: .5s
+}
+
+.twitter_btn2:hover span{/*ホバーで一周回転*/
+  -webkit-transform: rotateX(360deg);
+  -ms-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+
+/* ------------------------映画紹介ページ------------------------ */
+
+.showcase-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.category{
+  float: left;
+  width: 25%;
+  height: 70px;
+}
+
+.category a{
+  display: inline-block;
+  width: 80%;
+}
+.category a h2{
+  font-size: 20px;
+}
+
+.jp-nav{
+  background-image: linear-gradient(45deg, #709dff 0%, #91fdb7 100%);
+}
+.western-nav{
+  background-image: linear-gradient(45deg, #FF00A1 0%, #F6FF00 100%);
+}
+.anime-nav{
+  background-image: linear-gradient(45deg, #E629FF 0%, #29FFC2 100%);
+}
+.korea-nav{
+  background-image: linear-gradient(45deg, #EC790E 0%, #CFFF57 100%);
+}
+.no-select{
+  opacity: 0.4;
+}
+.no-select:hover{
+  opacity: 1;
+}
+.category a h2{
+  margin-top: 15px;
+}
+
+.showcase {
+  float: left;
+  width: 25%;
+  height: 400px;
+}
+
+.showcase-icon  {
+  position: relative;
+}
+
+.btn-film{
+  font-size: 19px;
+}
+
+.star-rating {
+  position: relative;
+  width: 5em;
+  height: 1em;
+  font-size: 25px;
+  margin: 0 auto;
+}
+.star-rating-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+}
+.star-rating-back {
+  color: #ccc;
+}
+
+.showcase-icon p {
+  position: absolute;
+  top: 85px;
+  right: 63px;
+  width: 150px;
+  height: 75px;
+  color:black;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  letter-spacing: 6px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  line-height: auto;
+}
+
+.anime-wrapper {
+  background-image: url(../../images/showcase_04.jpg);
+  background-position: 50% 75%;
+}
+
+.jp-wrapper {
+  background-image: url(../../images/showcase_03.jpg);
+}
+
+.korea-wrapper {
+  background-image: url(../../images/showcase_01.jpg);
+}
+
+.western-wrapper {
+  background-image: url(../../images/showcase_02.jpg);
+  background-position: bottom;
+}
